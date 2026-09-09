@@ -20,6 +20,7 @@ def test_zero_float_is_falsy():
     assert bool(0.0) == False
 
 
+
 def test_none_is_falsy():
     """None representerar frånvaron av ett värde och är alltid falsy.
     Är None sant eller falskt?"""
@@ -54,7 +55,7 @@ def test_none_is_not_equal_to_false():
     """None och False är båda falsy men de är inte lika värden.
     Vad returnerar x == False när x = None?"""
     x = None
-    assert (x == False) == ____
+    assert (x == False) == False
 
 
 def test_none_is_a_singleton():
@@ -62,11 +63,11 @@ def test_none_is_a_singleton():
     Pekar två variabler satta till None på exakt samma objekt?"""
     a = None
     b = None
-    assert (a is b) == ____
+    assert (a is b) == True
 
 
 def test_is_none_checks_identity_not_equality():
     """`is None` jämför identitet och kan inte åsidosättas av __eq__.
     Vad returnerar x is None när x = None?"""
     x = None
-    assert (x is None) == ____
+    assert (x is None) == True
